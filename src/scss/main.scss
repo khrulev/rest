@@ -1,0 +1,264 @@
+
+.daily-container{
+    display: block;
+    margin: 0 auto; 
+    max-width: 940px;
+    padding: 0 20px 0 20px;
+}
+
+.daily{
+    &__title{
+        padding-top: 81px;
+        // margin-bottom: 41px;
+        text-align: center;
+        color: #f1ac11;
+        font-family: "MyriadPro";
+        font-size: 42px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    // &__vegans{}
+    &__menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.daily-item{
+    padding: 50px 0;
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;
+    &__image{
+        height: 80px;
+        width: 80px;
+        position: relative;
+        overflow: hidden;
+        img {
+            position: absolute;
+            object-fit: cover;
+            object-position: center;
+            width: 100%; 
+        }
+    // background-color: green;
+    }
+    &__description{
+        padding: 0 20px;
+        width: 300px;
+    // background-color: yellow;
+    }   
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    &__price{
+        flex: 0 0 50%;
+    }
+    &__ingridients{
+        flex: 0 0 50%;
+    }
+}
+.price{
+    display: flex;
+    align-items: center;
+    &__name{
+        color: #2b2b2b;
+        font-family: "MyriadPro";
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__border{
+        flex-grow: 1;
+        border-bottom-width: 2px;
+        border-bottom-color: #2b2b2b;
+        border-bottom-style: dotted;
+        height: 25%;
+    }
+    &__number{
+        color: #2b2b2b;
+        font-family: "MyriadPro";
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+.ingridients{
+    display: flex;
+    align-items: center;
+    &__name{
+    color: #bcbcbc;
+    font-family: "MyriadPro";
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    }
+    &__border{
+        flex-grow: 1;
+        border-bottom-width: 2px;
+        border-bottom-color: #bcbcbc;
+        border-bottom-style: dotted;
+        height: 25%;
+    }
+    &__number{
+        color: #bcbcbc;
+        font-family: "MyriadPro";
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+
+.daily__offer{
+    display: flex;
+    position: relative;
+    z-index: 3;
+    height: 300px;
+    overflow: hidden;
+    margin: 89px 0;
+    img {
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        width: 100%; 
+        @media (max-width: 700px) {
+            // position: relative;
+            // display: none;
+        } 
+    }
+    @media (max-width: 700px) {
+        // overflow: auto;
+        // height: auto
+    } 
+}
+
+.daily__offer-offset{
+    flex: 0 0 50%;
+    // @media (max-width: 700px) {
+    //     display: none;
+    // } 
+}
+
+.daily__offer-content{
+    flex: 0 0 50%;
+    position: relative;
+    z-index: 4;
+    // @media (max-width: 700px) {
+    //     flex: 0 0 100%;
+    // } 
+}
+
+
+.offer{ 
+    @media (max-width: 380px) {
+        padding: 30px 10px;
+    }
+    @media (max-width: 700px) {
+        text-align: center;
+    } 
+
+    padding: 30px;
+    &__title{
+        color: #f1ac11;
+        font-family: "MyriadPro";
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+        @media (max-width: 380px) {
+            display: none;
+        }
+        @media (max-width: 464px) {
+            font-size: 18px;
+            margin: 0 0 18px 0;
+        }
+        @media (max-width: 700px) {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0 0 28px 0;
+        } 
+    }
+    &__subtitle{
+        color: #2b2b2b;
+        font-family: "MyriadPro";
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0 0 26px 0;
+
+
+        // @media (max-width: 1080px) {
+        //     padding: 20px 0 20px 0;
+        // } 
+        // @media (max-width: 1376px) {
+            
+        // }
+        // @media (max-width: 700px) {
+        //     font-size: 24px;
+        //     margin: 0 0 28px 0;
+        // } 
+        @media (max-width: 700px) {
+            display: none;
+        } 
+        @media (max-width: 818px) {
+            font-size: 16px;
+            margin: 0 0 12px 0;
+        } 
+        @media (max-width: 924px) {
+            font-size: 18px;
+            margin: 0 0 18px 0;
+        }        
+
+    }
+    &__text{
+        // overflow: hidden;
+        color: #d4d4d4;
+        font-family: "MyriadPro";
+        font-size: 14px;
+        font-weight: 400;
+        
+
+    }
+    &__link{
+        
+        a{  
+            padding: 10px 13px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 2px;
+            background-color: #f1ac11;
+            color: #2b2b2b;
+            font-family: "MyriadPro";
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            // opacity: 0.7;
+            &:hover{
+                // opacity: 1;
+                background-color: rgb(223, 134, 1);
+                transition: all 0.3s ease 0s;
+            }
+            
+        }
+    }
+}
+
+.offer__text-wrapper{
+    margin: 0 0 24px 0;
+    max-height: 84px;
+    overflow: scroll;
+    @media (max-width: 700px) {
+        display: none;
+    } 
+    // @media (max-width: 700px) {
+    //     max-height: 84px;
+    //     margin: 0 0 34px 0;
+    // } 
+    @media (max-width: 818px) {
+        max-height: 55px;
+        margin: 0 0 14px 0;
+    } 
+    @media (max-width: 924px) {
+        max-height: 70px;
+    } 
+}
