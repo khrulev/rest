@@ -1,0 +1,201 @@
+@import './burger.scss';
+
+.header-wrapper{
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    img {
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        @media (max-width: 1900px) {
+            height: 100%;
+        }    
+    }
+}
+
+.header-container{
+    max-width: 1852px;
+    padding: 0 20px 0 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.header-navbar{
+    margin: 0 0 0 0;
+    position: relative;
+    z-index: 6;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar{
+    height: 93.844px;
+}
+
+.navbar__logo{
+    position: relative;
+    width: 269px;
+    height: 100%;
+    img{
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}
+
+
+.navbar__content{
+    flex: 0 1 60%;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-items li a{
+    color: #ffffff;
+    font-family: "MyriadPro";
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:hover{
+        color: #f1ac11;
+        text-decoration: none;
+        border-bottom: 2px #f1ac11 solid;
+        padding-bottom: 8px;
+        transition: all 0.1s ease 0s;
+    }
+
+
+}
+
+.jumbotron{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1080px) {
+        flex-direction: column;
+    }
+}
+
+.column{
+    padding: 280px 0 420px 0;
+    @media (max-width: 1080px) {
+        padding: 20px 0 20px 0;
+    } 
+    @media (max-width: 1376px) {
+        padding: 200px 0 420px 0;
+    }
+    @media (max-width: 1548px) {
+        padding: 240px 0 420px 0;
+    }
+}
+
+.up-60{
+    padding: 220px 0 420px 0 !important; 
+    @media (max-width: 1080px) {
+        padding: 20px 0 20px 0px !important;
+    } 
+    @media (max-width: 1376px) {
+        padding: 160px 0 420px 0 !important;
+    }
+    @media (max-width: 1548px) {
+        padding: 180px 0 420px 0 !important;
+    }
+}
+
+.column__item{
+    opacity: 0.6;
+    width: 412px;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    img {
+        position: relative;
+        z-index: 3;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+
+    &:hover{
+        opacity: 1;
+        transition: all 0.3s ease 0s;;
+    }
+
+    @media (max-width: 580px) {
+        width: 260px;
+    }    
+    @media (max-width: 780px) {
+        width: 310px;
+    }       
+    @media (max-width: 955px) {
+        width: 270px;
+        } 
+    @media (max-width: 1376px) {
+            width: 300px;
+    }
+
+    @media (max-width: 1548px) {
+        width: 350px;
+    }
+}
+
+.item__title{
+    margin: 64px 0 29px 0;
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    padding: 0 60px;
+    font-family: "MyriadPro";
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @media (max-width: 580px) {
+        margin: 14px 0 10px 0;
+        font-size: 18px;
+    }    
+    @media (max-width: 780px) {
+        margin: 24px 0 15px 0;
+        font-size: 24px;
+    }       
+    @media (max-width: 955px) {
+        margin: 34px 0 20px 0;
+        font-size: 28px;
+        } 
+    @media (max-width: 1376px) {
+        margin: 44px 0 25px 0;
+        font-size: 32px;
+    }
+    @media (max-width: 1548px) {
+        margin: 54px 0 30px 0;
+        font-size: 34px;
+    }
+}
+
+.item__link{
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    padding: 0 0 40px 0;
+    a{
+        background-color: #f1ac11;
+        display: inline-block;
+        position: relative;
+        padding: 10px 39px;
+        color: #000000;
+        font-family: "MyriadPro";
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        border-radius: 4px;
+    }
+}
