@@ -1,0 +1,179 @@
+.footer-wrapper{
+    // background-color: green;
+    position: relative;
+    overflow: hidden;
+    img {
+        position: absolute;
+        object-fit: cover;
+        object-position: right;
+        height: 100%; 
+        width: 100%;
+        z-index:3;
+    }
+}
+.footer-container{
+    max-width: 1046px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    // text-align: center;
+}
+.footer-wrapper-inner{
+    position: relative;
+    z-index: 4;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // @media (max-width: 515px) {
+    //     display: block;
+    //     text-align: center;
+    // }  
+}
+.footer-column{
+    @media (max-width: 515px) {
+        flex: 0 0 50%;
+        margin: 0 0 50px 0;
+        // text-align: center;
+    } 
+    
+    li{
+        margin-bottom: 20px;
+        &:first-child{
+            margin-bottom: 40px;
+            color: #ffffff;
+            font-family: "MyriadPro";
+            font-size: 22px;
+            font-weight: 400;
+            text-transform: uppercase; 
+            @media (max-width: 740px) {
+                font-size: 17px;
+            }   
+        }
+        a{
+            color: #bbbbbb;
+            font-family: "MyriadPro";
+            font-size: 17px;
+            font-weight: 400;
+            text-transform: uppercase;
+            &:hover{
+                color: rgb(223, 134, 1);
+                transition: all 0.2s ease 0s;
+            }
+            @media (max-width: 740px) {
+                font-size: 14px;
+            } 
+        }
+
+        
+    }
+    &:nth-child(3) {
+        @media (max-width: 515px) {
+            text-align: center;
+            flex: 1 1 100%;
+        } 
+    }
+    &:last-child{
+        @media (max-width: 515px) {
+            flex: 1 1 100%;
+        } 
+    }
+}
+
+.footer-item{
+    &__title{
+        margin-bottom: 40px;
+        color: #ffffff;
+        font-family: "MyriadPro";
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        @media (max-width: 515px) {
+            text-align: center;
+        } 
+        @media (max-width: 670px) {
+            font-size: 17px;
+        }  
+    }
+    &__link{
+        
+    }
+    @media (max-width: 515px) {
+        max-width: 515px;
+    } 
+    @media (max-width: 670px) {
+        max-width: 170px;
+    }  
+}
+
+.about-links{
+    @media (max-width: 515px) {
+        text-align: center;
+    } 
+}
+.social-links{
+    @media (max-width: 515px) {
+        text-align: center;
+    } 
+}
+.useful-links{
+    @media (max-width: 515px) {
+        text-align: center;
+    } 
+}
+
+.footer-link{
+    display: flex;
+    &__input{
+        color: #ffffff;
+        margin: 0 20px 20px 0;
+        @media (max-width: 515px) {
+            margin: 0 0 20px 0;
+        } 
+        input{
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.4);
+            color: #ffffff; 
+            font-family: "MyriadPro";
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+            @media (max-width: 515px) {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        input::-webkit-input-placeholder {color:#ffffff;}
+        input::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+        input:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+        input:-ms-input-placeholder      {color:#ffffff;}
+       
+    }
+    &__btn{
+        a{  
+            padding: 10px 13px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 2px;
+            background-color: #f1ac11;
+            color: #2b2b2b;
+            font-family: "MyriadPro";
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            &:hover{
+                background-color: rgb(223, 134, 1);
+                transition: all 0.3s ease 0s;
+            }
+            @media (max-width: 515px) {
+                display: block;
+                width: 100%;
+            }
+            
+        }
+    }
+    @media (max-width: 670px) {
+        display: block;
+    }   
+}

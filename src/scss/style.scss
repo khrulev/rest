@@ -7,7 +7,6 @@ $lg1: 1199.98px;
 $xl1: 1919.98px;
 
 @mixin font($font_name, $file_name, $weight, $style) {
-
     @font-face {
     font-family: $font_name;
     font-display: swap;
@@ -21,11 +20,8 @@ $xl1: 1919.98px;
 @import "./fonts.scss";
 @import "./header.scss";
 @import "./main.scss";
-// @import "./footer.scss";
+@import "./footer.scss";
 
 body {
     background-color: #ffffff;
 }
-
-
-
